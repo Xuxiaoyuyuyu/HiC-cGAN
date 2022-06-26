@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="main-content">
+        <div class="container">
+            <div class="content-area">
+                <div class="page-title text-center">
+                    <font color="red"><h1>染色质相互作用接触图增强</h1></font>
+                </div>
+            </div>
+            <div class="converter-container">
+                <div class="converter-wrapper tall">
+                    <div class="converter">
+                        <div class="file-source-button-wrapper file-source-button-resizable">
+                            <center><font size="4" color="white">  文件名  : {{ file_name }}</font></center><br>
+                            <center><font size="4" color="white"> 文件大小 : {{ file_size }}</font></center><br>
+                            <hr style="border:3 dashed #ff0033" width="100%" SIZE=3>
+                            <form action="" enctype='multipart/form-data' method='POST'>
+                                <div class="file-source-button">
+                                    <label class="action-label"><input required type="file" name="file" class="file-input"></label>
+                                </div>
+                                <br><br>
+                                <button class="button input"><font size="3" face="verdana" color="black">重新上传</font></button>
+                            </form>
+                            <br>
+                            <button class="button input"><a href="{{ url_for('result') }}"><font size="3" face="verdana" color="black">生成高分辨率样本</font></a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

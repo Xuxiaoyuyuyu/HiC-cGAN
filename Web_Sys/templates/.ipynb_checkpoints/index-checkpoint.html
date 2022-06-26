@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="main-content">
+        <div class="container">
+            <div class="content-area">
+                <div class="page-title text-center">
+                    <font color="red"><h1>染色质相互作用接触图增强</h1></font>
+                </div>
+            </div>
+            <div class="converter-container">
+                <div class="converter-wrapper tall">
+                    <div class="converter">
+                        <div class="file-source-button-wrapper file-source-button-resizable">
+                            
+                            
+                            <form action="" enctype='multipart/form-data' method='POST'>
+                                <div class="file-source-button">
+                                    <label class="action-label"><input required type="file" name="file" class="file-ipnut"></label>
+                                </div>
+                                <div class="file-source-caption d-none d-md-block">
+                                    <span>文件格式：hkl文件(样本，基因组距离)</span>
+                                </div>
+                                <button class="button input"><font size="3" face="verdana" color="black">上传</font></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
